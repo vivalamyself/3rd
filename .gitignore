@@ -8,3 +8,4 @@ traceback.txt
 game/0GUI dev tools/
 assets/
 game/cache/
+*.rpyb
