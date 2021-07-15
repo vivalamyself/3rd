@@ -3,18 +3,18 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define d = Character("darksider", image="dmask")
-define nar = Character("narrator")
-define sol1 = Character("solider1", image="sol1") 
-define sol2 = Character("solider2")
-define pet = Character("peter", image="peter")
-define scar = Character("scar", image="scar")
-define laya = Character("laya")
-define dra = Character("dragon")
-define ghol = Character("gholac", image="demon")
-define may = Character("mayroon", image="mayroon")
+define d = Character("Darksider", image="dmask")
+define nar = Character("Narrator")
+define sol1 = Character("Solider1", image="sol1") 
+define sol2 = Character("Solider2", image="solider2")
+define pet = Character("Peter", image="peter")
+define scar = Character("Scar", image="scar")
+define laya = Character("Laya", image="sleader")
+define dra = Character("Dragon")
+define ghol = Character("Gholac", image="demon")
+define may = Character("Mayroon", image="mayroon")
 define m = Character("me")
-
+define aug = Character("Augustus", image="aug")
 
 image corhor:
     "corhor1"
@@ -538,7 +538,7 @@ image clouds:
     "lightnin"
     0.5
     "lightni"
-    1.8
+    2.2
     "lightning13"
     0.2
     "lightning12"
@@ -623,9 +623,57 @@ image scarfall:
     0.2
     "scarfall5"
     0.2
+image bubble1:
+    "leader"
+    0.2
+    "leader1"
+    0.2
+    "leader2"
+    0.2
+    "leader3"
+    0.2
+    "leader4"
+    0.2
+    "leader5"
+    0.2
+    "leader6"
+    6.2
+    "leader5"
+    0.2
+    "leader4"
+    0.2
+    "leader3"
+    0.2
+    "leader7"
+    0.2
+    "leader8"
+    6.2
+    "leader3"
+    0.2
+    "leader2"
+    0.2
+    "leader3"
+    0.2
+    "leader9"
+    0.2
+    "leader10"
+    0.2
+    "leader11"
+    6.2
+   
+image handruby:
+    "handruby1"
+    0.3
+    "handruby2"
+    0.3
+    "handruby3"
+    0.3
+    repeat
 
+# Transitions
 
-
+define dis1 = Dissolve(1.0)
+define dis2 = Dissolve(2.0)
 
 
 # The game starts here.
@@ -687,31 +735,27 @@ label game:
     show swamp
 
     # These display lines of dialogue.
-
-    d "yess im finally arrive hear ."
-
-    d "after all this months"
-
-    d "im revelanted."
-
+    "."
     hide swamp
 
-    show closed eyes
-
+    show closed eyes 
+    with dissolve
+    
     # These display lines of dialogue.
-
-    d "just whaiting for revenge."
+    d "Yes I'm finally arrive hear ."
+    d "After all these months"
+    d "That's what I was waiting for."
 
     
     hide closed eyes
-
+    
     show openeye
 
     # These display lines of dialogue.
 
-    d "i must findout my stuffs."
+    d "I must find my weapons."
 
-    d "i burry them n cementry."
+    d "Buried them in cemetery."
     
     hide openeye
 
@@ -719,35 +763,35 @@ label game:
 
     # These display lines of dialogue.
 
-    d "bettr go faster."
+    d "better go faster."
 
     # These display lines of dialogue.
 
-    d "before they find me?."
+    d "Before they can find me?."
     hide swamp rise
     show bg15
     with dissolve
 
     # These display lines of dialogue.
 
-    nar "cementry is house o demons and ghosts now.{nw}"
-    nar "creey creatures who living in old cementry eating dead bodies flesh and bones.{nw}"
-    nar "they can smell alive creatures breath and hear them heart beats.{nw}"
-    nar "they defence of swamp dragon territory and call swamp dragon to kill you"
+    nar "The cemetery is the house of demons and ghosts."
+    nar "Creepy creatures who live in the old cemetery, eating dead bodies flesh, and bones."
+    nar "They can smell alive creatures breath and hear them heart beats."
+    nar "protect swamp dragon territory and call swamp dragon to kill you"
     show nomask
     with moveinright
 
-    d "i can feel demons"
-    d "they very near to me"
+    d "I can feel demons"
+    d "They very near to me"
     show bg3
-    d "my stuffs is other side of cementry"
-    d "i burried them under the cone shape bulding"
-    d "in must across betwin ghosts"
+    d "My stuff is on other side of the cemetery"
+    d "I buried them under the cone shape building"
+    d "I must across between ghosts"
     hide bg3
     show bg15
-    d "the mask can take me some power i do need"
+    d "This mask can help me to hide."
 
-    d "its beter to put my mask on"
+    d "It's better to put my mask on"
 
     show mask
 
@@ -755,12 +799,12 @@ label game:
 
     menu:
 
-        "mask of death do you want to put it on your face?"
+        "mask of death. Do you want to put it on your face?"
 
-        "yes i put i on":
+        "Yes i put it on":
             jump maskon
 
-        "no i dont need it":
+        "No, i dont need it":
             jump nomask
 
    
@@ -775,18 +819,17 @@ label nomask:
     with moveinright
     play music "sooo.opus"
     
-    d " i must move very quick and quiet "
+    d " I must move very quick and quiet "
 
-    d "if ghostsand and demons can find me i will be in truble "
+    d "If ghosts and demons can find me i will be in trouble "
 
     hide nomask
     show bg3
     show demon
     with moveinright
 
-    ghol "i can smell humen flesh anlive human is around hear"
-    ghol "i must to find it first and call dragon"
-    ghol "he is there an alive man"
+    ghol "I can smell humans flesh, a human is around here. I must find him first and call dragon"
+    ghol "there he is, an alive man."
     hide demon
     hide bg3
     show bg15
@@ -794,7 +837,7 @@ label nomask:
     show nomask
     with moveinright
     d "damn! they find me"
-    d "i dont have any stuff to kill them"
+    d "I don't have any weapons to kill them"
     show bg17
     show nomask
     d "better run away"
@@ -802,25 +845,24 @@ label nomask:
     show bg3
     show demon2
     with moveinright
-    ghol "ghrrrrrrrrrrrrrrr ghrrrrrrrrrrrrrrrrr"
+    ghol "ghrrrrrrrrrrrrrrr ghrrrrrrrrrrrrrrrrr blak yong "
 
 
     show dragon1
 
-    nar "the swamp dragon heard the voice and turn around to kill any alive creatures"
-    nar "on this territory"
+    nar "the swamp dragon heard the voice and turn around to kill any alive creatures on its territory"
     show bg16
     show nomask
-    play sound "fire126.ogg"
-    d "there is no way to run away from it "
-    d "dragon sat all forrest on fire"
+    play sound "fire126.OGG"
+    d "There is no way to run away from it "
+    d "Dragon set all forest on fire"
     show dragon2
-    nar "dragon kill every alive creature to feed demons"
-    nar "dead bodies flesh for its territory demons"
+    nar "Dragon kill every alive creature to feed demons"
+    nar "Dead bodies flesh for its territory demons"
     show dragon4
-    dra "rosted human is a good food for my demons"
+    dra "Roasted human is good food for my demons"
     show dragonnomask
-    nar "burn in my fire you puny human"
+    nar "Burn in my fire you puny human"
     show udie
     # This ends the game.
 
@@ -839,14 +881,11 @@ label maskon:
 
     show mask11
     with moveinbottom
-    d "this mask makes me stronger and invisible in front of demons"
+    d "This mask makes me stronger and invisible in front of demons."
    
     show mask11
-    d "i must find my stuffs and kill the beasts and demons"
-    d "." 
-
-    d "..."
-
+    d "I must find my weapons and kill the beasts and demons."
+    
     hide mask11
 
     show doom
@@ -854,34 +893,34 @@ label maskon:
     with moveinbottom
 
     show mask11
-    d "finally find my weapons"
-    d "now ill wipe out this forrest of demons and beasts"
+    d "Finally, find my weapons. Now I'll wipe out this forest of demons and beasts"
+    
     
     show demon
 
-    d "come hear demon  and teast my weapons "
+    d "Come here demon and teast my weapons "
 
     hide mask11
     hide weapons
-    ghol "human? with death mask on his face ? but how?"
+    ghol "Human? with a skull mask on his face? but how?"
 
     show demon2
     ghol "ghrrrrrrrrrrrrrrrrrrrrrrrrrrr"
 
     menu:      
 
-        nar "demon called the dragon .and it come too burn up me"
+        nar "Demon called the dragon .and it comes to burn up me."
 
-        "run away from hear ":
+        "Run away from here ":
             jump nomask
 
-        "i have a plan too kill dragon":
+        "I have a plan too kill dragon":
             jump plan
 
     hide me
 
     show sylvie green giggle
-    e "die you idiot."
+    e "Die you idiot."
 
     show blood
 
@@ -899,51 +938,49 @@ label plan:
 
     show dragon1
 
-    nar "the swamp dragon heard the voice and turn around to kill any alive creatures"
-    nar "on this territory"
+    nar "The swamp dragon heard the voice and turn around to kill any alive creatures on its territory"
     show bg16
     show mask11
-    d "dragon sat all forrest on fire"
+    d "Dragon set all forest on fire"
     hide mask11
     show dragon2
-    nar "dragon kill every alive creature to feed demons"
-    nar "dead bodies flesh for its territory demons"
+    nar "Dragon kill every alive creature to feed demons"
+    nar "Dead bodies flesh for its territory demons"
     show dragon4
-    dra "rosted human is a good food for my demons"
+    dra "Roasted human is good food for my demons"
  
     show mask11
     
-    d "hey you  big lizzard !"
+    d "Hey you  big lizard !"
     d "do you know who am i?"
-    d "i am the death"
-    d "idont affraid of you"
-    d "i have the dragon heart with me.do you want to see?"
+    d "I am the death, I am not afraid of you"
+    d "I have the dragon heart with me.do you want to see?"
 
     hide mask11
 
     
-    dra "heart of a dragon?"
-    d "do you want tosee?come closer"
+    dra "Heart of a dragon?"
+    d "Do you want to see it? just come closer"
     show dragon3
-    dra "well show me now"
-    dra "i want to see that heart"
+    dra "Well, show me now."
+    dra "I want to see that heart."
     hide dragon3
     with dissolve
     show bg14
     show maskarm
-    d "here i must ready it first"
+    d "Here I must ready it first"
     "."
     show darkdeath
-    
+    with vpunch
 
-    d "because its in your chest"
+    d "because it's in your chest"
     show dragon6
-
+    with vpunch
     "" 
     menu:
     
     
-        "countinue level 2 ":
+        "Countinue level 2 ":
             jump fmap
 
 label fmap:
@@ -953,21 +990,21 @@ label fmap:
     scene fmap
 
     show fmap2
-    nar "you killed" 
+    nar "." 
     show you killed
     with moveinbottom
     
     play music "2ndlevel.mp3"
 
     nar "you killed the dragon"
-    nar "..........."
-    nar "........"
-    nar "................"
+   
+    "."
+    "."
 
     menu:
     
     
-        "countinue ":
+        "Countinue ":
             jump level2
 
 
@@ -985,13 +1022,13 @@ label intro:
 
     play music "q.opus"
     
-    nar "for thousands of years"
-    nar "........."
-    nar "....................."
-    nar "................"
-    nar "..............................."
+    nar "For thousands of years"
+    nar "."
+    nar "."
+    nar "."
+    nar "."
     menu:
-        m "play the game"
+        m "Play the game"
     
         "game ":
             jump game
@@ -1003,85 +1040,75 @@ label level2:
     show fogtree
     show mask11
     with moveinright
-    d "long way to hawk castle but i never get tired"
-    d "untill i get my family revange "
+    d " A long way to hawk castle but I never get tired"
     show fog
-    d "the fog is began"
-    d "i cant see my way"
+    d "The fog begins. I can't see my way"
+    
     show fog1
-    laya "you lost in your inside darkness"
+    laya "You get lost inside  your darkness"
 
-    show mask11
-    with moveinright
+    
 
-    d "who are you?"
-    laya "i heard about you you lose your past"
+    d "Who are you?"
+    laya "I heard about you, you lose your past"
     d "show yourself"
-    laya ".........."
-    d "............"
+    laya "One man comes from the north to get revenge on this world, his heart is full of sadness and anger "
+    d "How do you now these?"
     show fog2
     with dissolve
-    laya ".........."
-    laya ".............."
+    laya "legends say after he destroys annihilating ................this age. "
+    laya "this is the enthis is the end of demons, elves, beast's time." 
+    laya "they will crawl into the shadows and stay there until be called again by a dark soul."
     show fog4
     with dissolve
-    laya "you passed the forrest.and not killed by the dragon?"
-    d "I killd that lizzard.now the forrest is safe"
+    laya "You passed the forest. and not killed by the dragon"
+    d "I killed that lizard. now the forest is safe"
 
     laya "You are very smart and strong"
-    laya "Now where are you going?"
+    laya "where are you going now?"
     d "I'm going to the south"
-    laya "You must across of vampires territory the live in hawk castle"
+    laya "You must across of vampires territory they live in hawk castle"
 
     laya "Vampires keep peoples in castle dungeons"
-    hide fog4
-    "."
-    scene fog
-    with dissolve
-
-    show leader
-    with dissolve
-    
     laya "They keep three magical stones in their castle"
-    laya "Two green rubby's and an amulet"
-    laya "The green rubby's incrase your attack power up and make's your enemy weaker"
+    laya "Two green rubies and an amulet"
+    laya "The green rubies incrase your attack power up and make's your enemy weaker"
     d "Where can i find them?"
-    laya "The rubbys are hidden in sculpture hall.and the amulet is with dark queen"
-    laya "No one can reach them.all peoples killed in this way"
+    scene fog
+    hide fog4
+    show bubble1
+    laya "hawk castle is a dark place and full of mysterys.{w=6.0}"
+    laya "The rubies are hidden in the sculpture hall. and the amulet is with dark queen.{w=6.0}"
+    laya "The castle keeps by guards, they are half-human and half animals.{w=6.0}"
+    laya "Vampires can not be in daylight.They live in darkness"
+    d "why are you helping me?you are an elf, if i sucsess in my job your time will be end to"
+    laya "its time to rebuild the world by humans hand, the human race will take the world control"
+    laya "untill they make the world to a hell for themselves and other creaturs"
 
     hide leader
-    show mask11
-    with moveinright
-    laya "The cassle keeps by gaurds "
-
-    laya "Vampires can not be in daylight"
-    laya "They live in darkness."
-    laya "........."
     show bg19
     with moveinbottom
-    nar "this village complitly destroyed in vampires attack"
+    nar "this village was destroyed by the vampire attack. no one  lives here..."
     nar "................."
     show stranger
     with dissolve
-    pet "you are a warrior very old stuff and wapons"
+    pet "you are a warrior very old stuff and weapons"
     d "who are you stranger"
     show mask11
     with moveinright
-    pet "you are stranger here"
-    pet "im use to be a villager around here"
-    pet "after vampires attack my peoples trys to kill vampies"
-    pet "but they uses wrewolf gaurds to cach them up"
+    pet "you are a stranger here!"
+    pet "I'm used to be a villager around here. after vampires attack, my peoples try to kill vampires."
+    pet " but they use werewolf guards to catch them up"
     show mask11
     with moveinright
-    d "werewolfs?"
-    pet "yes they are humens but in moonlight nights transfer to wolfs"
+    d "werewolves?"
+    pet "yes they are human but in moonlight nights changes to wolves"
     show mask11
     with moveinright
-    d "i want go to there and free peoples"
-    pet "you? alone? i dont think.you cant do it alone"
-    pet "even a group of warriors cant break the gaurd"
-    d "you dont know me i come to revange "
-    pet "me too i cant wait.i can lead you there.do you want?"
+    d "I want to go there and free up peoples and kill the vampire"
+    pet "you? alone? I don't think. you cant do it alone"
+    pet "even a group of warriors cant break the guard.i can lead you there.if you want"
+    
 
     menu:
         m "play the game"
@@ -1094,33 +1121,38 @@ label level2:
 
 label together:
     $ together = True
-    scene together
+    scene black
+    with dis2
+    show text "{size=+25}After a while{/size}" at truecenter
+    with dissolve
+    pause 2
+    hide text
+    with dissolve
     show hcastle
-    "."
+    with dis2
     show stranger
     with dissolve
     pet "we are near"
-    pet "see the castle"
+    pet "you can see the castle"
     show deathmask
     with dissolve
-    d ".........."
-    "..........."
-    d ".............."
+    d "it's so dark and horrible"
+
     show castledoor
-    "."
+    d "castle does not have any guard? "
     show stranger
-    pet "......"
-    pet "..............."
-    pet ".................."
+    pet "yes. but I know a way into castle no one isn't near there"
+    pet "werewolves protect outside the casstle but not able to go to palace."
+    pet "there is an old spell to protect central castle rooms of werewolf attack"
     show deathmask
-    d "............"
-    d "..............."
+    d "you know many things about here."
+    pet "we are natives. hear many stories about powers protecting this castle"
     show castleinside
-    pet ".........."
-    pet "................."
-    pet "..........."
-    pet "that room"
-    pet "go inside"
+    d "there are two kinds of power jewels in this castle."
+    pet "yes, but they are hidden .no one can't reach that jewels before "
+    d "I heard a pair of these jewels are in the sculpture room"
+    pet "a memorial sculpture from the first vampire on earth."
+    pet "that room.go inside"
     show moonlight03
     pet "............"
     pet "................."
@@ -1137,7 +1169,7 @@ label together:
     show deathmask
     d "moon risses up"
 
-    d "where are you peteer"
+    d "where are you peter"
     play sound "wwvoice.ogg"
     show stranger3
     with hpunch
@@ -1148,46 +1180,45 @@ label together:
     with hpunch
     pet "............"
 
-    show moonlight31
+    scene moonlight31
     with dissolve
-
-    "."
     show maskarm
-
     d "who are you?"
+    hide moonlight31
     hide maskarm
-
+    show stranger2
+    with dissolve
     pet "yes im a werewolf"
-    pet "for hundreds of years we are vampires slave. "
-    pet "vampies make us to do darnest things for them. "
-    d "like destroy hoses and killing peoples?"
-    d "well,go ahead im ready!"
-    pet "we does many things but we have no any other choice."
-    pet "they make hostage my peoples and my family. "
+    pet "for hundreds of years, we are vampires slave. "
+    pet "vampires make us do most darn things for them. "
+    d "like destroy villages and killing peoples?"
+    d "well, go ahead I'm ready!"
+    pet "we do many things before but we had no other choice."
+    pet "they take my peoples and my family hostage. "
     d "where are vampiers now?"
-    pet "they live in highest palaze of castle"
-    pet " going out for hunting peoples and suck their blood."
-    pet "they play with victums first and sucks all bloods and injoying like that"
+    pet "they live in the highest palace of the castle"
+    pet " going out for hunting peoples and sucking their blood."
+    pet "they play with victims first and sucks all blood and enjoying like that"
+    play sound "helpme.OGG"
     d ".............."
 
-    play sound "flaught.mp3"
+    
 
     d "what was that sound."
-    pet "one of vampires is being ready for her dinner."
-    pet "she is playing with a victum"
-    play voice "helpme.mp3"
-    pet "she is hunting."
+    pet "one of the vampires is being ready for her dinner."
+    pet "she is playing with a victim"
+  
     show stairs
     show mask11
-    d "you go to dungeons and i go to up stairs"
+    d "you go to dungeons and I go upstairs"
 
     menu:
-        nar "choose one character"
+        nar "Choose one character"
     
-        "darksider ":
+        "Darksider ":
             jump corridor
 
-        "stranger":
+        "Peter":
             jump dungeon 
 
 label corridor:
@@ -1195,51 +1226,50 @@ label corridor:
     scene corridor
     show corridor
     with dissolve
-    d "hey,any body there?"
-    "........."
+    d "hey, anybody there?"
     
-    d "..................."
-    may "im hear"
-    may "you cant see me?"
+
     show corridor1
     with dissolve
     may "........."
     play sound "flaught0.ogg"
     show corridor2
     with dissolve
-    may "................"
+    may "I'm here"
     show corridor4
     with dissolve
-    may ".............."
+    may "Cant you see me?."
     show corridor5
     with dissolve
     may "............"
     scene corridor6
     with dissolve
-    "............"
+    "."
     
     show mayroon11
 
     may "hello dear!"
     may "how could you come here?"
-    d "you are a vampire.you sucking blood.how ugly you are"
+    may "I was having dinner.do you want to join me?"
+    d "you are a vampire. you sucking humans blood."
     d "you have no idea who am i"
-    d "now i'll kill you cruel vampire"
-    may "ha ha ha ha "
-    may "you will see in your dreams"
+    d "Now I'll kill you, cruel vampire"
+    may "ha ha ha ha in your dreams"
+   
     show corridor2
     hide mayroon11
     with dissolve
-    may "you cant see ma now how can you kill me"
-    may "i can be every where"
-    d "."
+    may "you can't see me now how can you kill me?"
+    
+    may "I can be every where"
     show corridorl3
     with dissolve
+    play sound "flaught3.ogg"
     "."
     show corhorlback
     with dissolve
     d "where are you?"
-    d "if you are immortall why you hidding?"
+    d "if you are immortal, so why you hiding?"
     show corridorleft2
     with dissolve
     "."
@@ -1261,7 +1291,7 @@ label corridor:
     
     show corhor1
     with dissolve
-    d "you cant carry day light"
+    d "you can't stand daylight"
     show corhor
     may "no i cant"
     menu:
@@ -1275,6 +1305,7 @@ label corridor2:
 
     scene black
     with dissolve
+    play sound "slash1.MP3"
     show slash
     with vpunch
     "."
@@ -1284,22 +1315,22 @@ label corridor2:
     show corhor1
     with dissolve
 
-    d "you not die by my weapon hit?"
+    d "you did not die by my weapon hit?"
     hide corhor1
     
     show maysadblood
     with dissolve
 
-    may "ouch! it dose hurt "
+    may "ouch! it hurts "
     hide maysadblood
     show corhor1
     with dissolve
     
-    d "but yuou must be killed now"
+    d "but you must be killed now"
     show corridorleft1
     with dissolve
     show mayscar1
-    may "but i cant die like this!"
+    may "but i can't die like this!"
 
     show mayscar1
     show scargone
@@ -1308,7 +1339,7 @@ label corridor2:
     menu:
         nar "hit her"
     
-        "combine weapon with green rubby ":
+        "combine weapon with green ruby ":
             jump corridor3
 
 
@@ -1319,10 +1350,11 @@ label corridor3:
     show combine
     "."
     show corridorleft02
-    may "where did you get that?"
+    may "how did you get that?"
     d "is that your fathers eye?"
-    d "you will killed by this now"
+    d "you will be killed by this now"
     scene black
+    play sound "slash2.MP3"
     show oslash
     "."
     play sound "nonono.ogg"
@@ -1331,17 +1363,21 @@ label corridor3:
     with dissolve
 
     may "NO.NO.NO.stop. noooooo"
+    
+    "."
     hide burning
-
     show burnback
     with dissolve
 
+    
+    "."
     "."
     hide burnback
-
     show burn
     with dissolve
     "."
+    "."
+
     scene black
     show corhor1
     with dissolve
@@ -1357,11 +1393,10 @@ label corridor3:
     show eyejewel1
     with dissolve
     d "It's an amulet"
-    d "."
-    d "."
+    "."
     show eyejewel
     d "looks like an eye!"
-    d "Kinda wired it's alive"
+    d "how wired it's alive"
     d "It's watching me!"
 
 
@@ -1376,39 +1411,41 @@ label pickeye:
     scene black
     "."
     scene black
+    play sound "dogwin.MP3"
     "."
     show thedoor
     with dissolve
-    d "whats that noise?,who's there?"
+    d "what's that noise? who's there?"
     scene black
     with dissolve
     show wwcry1
     with dissolve
 
-    "dont,please dont kill me"
-    d "dont be scared,i'm here to kill the vampire"
-    d "peter told me vampire live here,where is he?"
+    "don't, please don't kill me"
+    d "don't be scared, I'm here to kill the vampire"
+    d "Peter told me vampire lives here, where is he?"
     show wwcryy
     with moveinright
-    "peter?is he alive?"
-    d "yes he is in dungeon now, looking for his family"
-    "i am his wife , vampire queen take me here from dungeon to kill me"
-    d "I kill'd her right now , where is the vampire now?"
+    "Peter?is he alive?"
+    d "yes he is in the dungeon now, looking for his family"
+    "I am his wife, vampire queen take me here from dungeon to kill me"
+    d "I killed her right now, where is the vampire now?"
     "he is out..."
-    d "what is that vice ? is him voice?"
+    play sound "mannonono.MP3"
+    d "what is that voice ? is it his voice?"
     "yes he comes back"
     d "better you go down to peter"
     scene black
     with dissolve
     show cryamp
-    "my dear queen,noooo "
-    "who kill'd you"
+    aug "my dear queen,noooo "
+    aug "who killed you"
     show corridorleft02
-    d "i woold kill her,who are you ugly man"
+    d "I would kill her, who are you ugly man"
     show drac1
-    "youu . youuu "
+    aug "youu . youuu "
     show drac
-    "I kill you"
+    aug "I kill you"
     "."
     show drac6
     "."
@@ -1418,9 +1455,9 @@ label pickeye:
     show room1
     "."
     show e131
-    "I am not the only one,want to kill you "
-    "everyone,come out and kill this man"
-    "."
+    aug "I am not the only one,want to kill you "
+    aug "everyone,come out and kill this man"
+    
     show room2
     "."
  
@@ -1429,14 +1466,14 @@ label pickeye:
     show text "After a while" at truecenter
     show riim11
     with dissolve
-    d "no, i drop my weapon"
+    d "no, I lost my weapon"
     show riim12
     with dissolve
     "."
     show e333
     with dissolve
-    "you have no power without your wapons,now we kill you in this room"
-    d "We? me and you are alone here"
+    aug "you have no power without your weapons,now we kill you in this room"
+    d "We? there is nobody here"
     show e333
     
     
@@ -1451,27 +1488,27 @@ label pickeye:
     "."
     scene e333
     with hpunch
-    "someone is on roof"
-    "come out my laylies you are ready now,go on roof top and kill every one"
+    aug "Someone is on the roof"
+    aug "Come out my ladies you are ready now, go on the rooftop and kill everyone"
 
     show trapdoorpng
     
     "."
     show trapdoor
-    "my ladies, i bite them in few week ago now they are perfect vampire ladys"
+    aug "my ladies, I bite them a few weeks ago they are the perfect vampire now"
     show bats
     "."
     scene e333
-    "before i kill you,tell me who are you what make you come here"
+    aug "Before I kill you, tell me who are you and what makes you come here"
     show riim12
-    d "I am death,i comes here to wipe out the world from demons and bad persons"
+    d "I am death, I come here to wipe out the world from demons and bad persons"
     scene e333
-    "you have no power without your wapons"
+    aug "Your story will end here.because you have no chance without your weapons"
     show morning
-    d "sounds like the sun is rising up,i heared about you you can live only in darkness"
+    d "sounds like the sun is rising, I heard  you can live only in darkness"
     show e333 
     with dissolve
-    "yes but this room just have a little hole in this wall,I am safe in here"
+    aug "yes but this room just has a little hole in this wall, I am safe in here"
     show sakf
     with hpunch
     show sakf
@@ -1482,9 +1519,9 @@ label pickeye:
     "."
     show sakff
     
-    scar "master,now is youre death time"
+    scar "master, now is your death time. finally, I come to get my revenge"
     show scarshad
-    "scar,you are a trador"
+    aug "scar, you are a trader"
     show scarshadd
     "."
     show sakfff
@@ -1502,16 +1539,14 @@ label dungeon:
     scene dungeon
     show moonlight4
     ".........."
-    show scar4
-    "..........."
-    show scarl
+    show scar4 
     with moveinleft
     scar "well,well,well peter is come back"
-    scar "did you bring new victums with yourself?"
+    scar "did you bring new victims with yourself?"
     show moonlight4
-    pet "i find someone he help us for kill vampires take back our freedoom"
-    pet "we can kill undead wolf together"
-    pet "scar you are much more stronger and bigger than me .so"
+    pet "I find someone who helps us to kill vampires and takes back our freedom"
+    pet "we can kill the undead wolf together"
+    pet "scar you are much bigger and stronger than me .so"
 
     menu:
         m "choose one"
@@ -1519,27 +1554,27 @@ label dungeon:
         "after that we killd the undead wolf you can be the alpha ":
             jump victory
 
-        "i bring death here , i diserve to be the alpha":
+        "I bring death here, I deserve to be the alpha":
             jump fail
 
 label victory:
     $ victory = True
     scene victory
     show scar4 
-    scar ".............."
-    "........"
+    scar "well,what is your plan to kill the undead wolf?"
+    "you know.it looks like a ghost how can you kill a  ghost?"
     show moonlight4
     with dissolve
-    scar "..............."
-    "......................"
+    pet "I have a green ruby and I know how to use it to freeze the undead wolf for a while "
+    "and then,you start hitting on it with your all power."
     show scar4
-    scar "................."
-    "............"
+    scar "how did you get the green ruby?"
+    pet "that man finds a pair of the green rubies in the sculpture hall"
+    pet "and he takes one of those ruibe's to me.he is very diffrent and strong"
+    pet "I'm sure he can help us to take back our freedom"
     scene black with dissolve
     show prison4
-    "..............."
-    "............"
-    "..............."
+    scar "we are near "
     show udwolf
     "."
     show rubbyhand
@@ -1592,7 +1627,7 @@ label victory:
     show scarl
     with moveinleft
     
-    "Now i killed undead wolf,I'm going to gtter the others for ready to attack the vampires "
+    "Now I killed the undead wolf, I'm going to gather the others to get ready for attack the vampires "
     show peter21
     with moveinright
     pet "yes i go with you"
@@ -1601,23 +1636,23 @@ label victory:
     "."
     show wolfcall1
     with dissolve
-    "listen , scar is howling.he is calling us to prepare for war"
+    "listen, scar is howling. he is calling us to prepare for war"
 
     show wolfcall2
     with dissolve
     
-    "its time for revange"
+    "its time for revenge"
     "let's go to scar"
     scene black
     with dissolve
     show wwpack
     with dissolve
-    "scar,we are here.what you want to say?"
+    "scar, we are here. what you want to say?"
     show scarmoon1
     with dissolve
-    "I killed the undead wolf.now i am the alpha"
-    "We are not slaves anymore.we attack the vampires tower now"
-    "and kill the vampire.and we will be free"
+    scar "I killed the undead wolf.now i am the alpha"
+    scar "We are not slaves anymore. we attack the vampire's tower now"
+    scar "and kill the vampire.and we will be free"
     scene black 
     with dissolve
     show hcastle
@@ -1626,34 +1661,40 @@ label victory:
     show scarl
     with moveinleft
     
-    "we just can attack form outside,the vampire protect the plaze with dark magic "
-    "I start attack from south buldings"
+    "we just can attack from outside, the vampire protect the palace with dark magic "
+    "I start the attack from south buildings"
 
     show peter21
     with moveinright
-    pet "I star with norten buldings"
+    pet "I start with northern buildings"
     hide scarl
     show wwcryyl
-    "peter,my dear,i miss you"
+    "peter, my dear, I miss you"
     pet "shina , dear how could you run away?"
-    "That scull mask man saved my live , when vampire queen wants to kill me"
+    "That skull mask man saved my live, when the vampire queen wants to kill me"
     pet "where is he now?"
-    "in sothern buldings,the vampire wants to kill him"
+    "in southern buildings, the vampire wants to kill him"
     show batincoming
     show peter21
     with moveinright
-    pet "vampire bats incoming,they are a hundreds we cant kill all"
+    pet "vampire bats incoming, they are hundreds we cant kill all"
     show wwfight
     with dissolve
     pet "i must do somthing"
     show batincoming
     show peter21
     with moveinright
-    pet "how to use green rubby to kill all bats?.use thunder power comes out of green ruby"
-    pet "two earths and one sky.yes,i must hit the green rubby two times upside down to groung"
+    pet "how to use green ruby to kill all bats?.use thunder power comes out of green ruby"
+    show grayg
+    with dissolve
+    show handruby
+    with moveinbottom
+    pet "two earths and one sky makes lightning. yes, I must hit the green ruby two times upside down to the ground"
     show blast
     with hpunch
+    play sound "raythunder1.MP3"
     "."
+    play sound "raythunder.MP3"
     show clouds
     "."
     show batfall
@@ -1662,28 +1703,31 @@ label victory:
     with dissolve
     show peter21
     with moveinright
-    pet "sun is rising up,today is our freedom day"
+    pet "the sun is rising, today is our freedom day"
     show scarfall
     "noooo scaar"
     scene black
     with dissolve
     show scardeath
     with dissolve
-    pet "no scar,no whats happend for you,now who can be the alpha?"
+    pet "no scar, no whats happened for you, now who can be the alpha?"
     show wwcryyl
     with moveinleft
-    "you are next alpha, "
+    "you are the next alpha, "
     hide wwcryyl
     show dstand
     d "scar kill the vampire he was a hero"
-    d "thank you peter,you are cause of this victory "
-    pet "thank ou because you are very brave "
+    d "thank you peter, you are the cause of this victory"
+    pet "scar sacrifice himself life for his peoples "
     pet "where you want to go now?"
-    d "i had a dear friend, my hourse,i need it now and i must re live it agine"
-    pet "thake this rubby you ned both of this bubbys"
+    d "I had a dear friend, my horse, need it now and I must resurrect it again"
+    pet "take this ruby you need both of this rubies"
     d "thank you , and be safe"
-    pet "good bye my friend "
-
+    pet "goodbye my friend "
+    show black with dis1
+    " "
+    show fmap3 with dis1
+    " "
 
         
 
