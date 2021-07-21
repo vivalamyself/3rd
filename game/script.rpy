@@ -670,6 +670,85 @@ image handruby:
     0.3
     repeat
 
+image horsed:
+
+    "horsed0"
+    0.3
+    "horsed1"
+    0.3
+    "horsed2"
+    0.3
+    "horsed3"
+    0.3
+    "horsed4"
+    0.3
+    "horsed6"
+    0.3
+    "horsed7"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+    "horsed8"
+    0.3
+    "horsed9"
+    0.3
+
+
+transform left_to_right:
+    xalign 0.0
+    linear 2.0 xalign 1.0
+    repeat    
+
 # Transitions
 
 define dis1 = Dissolve(1.0)
@@ -731,7 +810,6 @@ label game:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-
     show swamp
 
     # These display lines of dialogue.
@@ -1724,13 +1802,93 @@ label victory:
     pet "take this ruby you need both of this rubies"
     d "thank you , and be safe"
     pet "goodbye my friend "
-    show black with dis1
+    scene black with dis1
     " "
     show fmap3 with dis1
     " "
+    menu:
+        "start level3 ":
+            jump lvl3
 
-        
 
+label lvl3:
+
+    $ lvl3 = True
+    scene black with dis1
+    play music "Judgement.MP3"
+    show bfield0
+    with dis1
+    d "finally in old battlefield, i lose many of my friends here"
+    d "i have to find my dear friend my horse"
+    scene black
+    show crowland with dis1
+    d "sound like crows have party here, to many warriors corps are a good food for crows"
+    show crowlandzoom
+    with dissolve
+    d "very hard days, enemies attack on my peoples"
+    scene light1 with dis1
+    show villageattack
+    with dis1
+    d "they kill everyone"
+    scene light1 with dissolve
+    show 3warriors with dis1
+    "me and my two brave warriors comes to kill the enemy"
+    scene light1 with dissolve
+    show untitled7 with dis1
+    "and we fight hardly"
+    scene light1 with dissolve
+    show happywarriors with dis1
+    "at last we won"
+    scene light1 with dissolve
+    show happypeoples with dis1
+    "and peoples was happy"
+    scene light1 with dissolve
+    show dragfire with dis1
+    show burnhand with dis1
+    "until the fire dragon comes and turn our happyness to the hell"
+    scene light1 with dissolve
+    show crowlandzoom with dis1
+    "oh  my dear horse"
+    scene light1 with dissolve
+    show dragonhor
+    with dis1
+    "he save my live"
+    scene light1 with dissolve
+    show horsed
+    with dissolve
+    "."
+    show horserun
+    with dis1
+    "."
+    show horserun0
+    with dis1
+    " "
+    show horsejumpf
+    with dissolve
+    "."
+    show horsejumpff
+    with dissolve
+    "."
+    show horsejumpfff
+    with vpunch
+    "."
+    show horsejumpffff
+    with dissolve
+    "."
+    show horsejumpfffff
+    with dissolve
+    "."
+    show horsejumpffffff
+    with dissolve
+    "."
+    scene light1 with dissolve
+    show clif with dis1
+    " "
+    show clifff with dis1
+    "dragon sink in river and my horse fall in clif"
+    scene light1 with dissolve
+    show crowlandzoom with dis1
+    "i must find my horse bones and use rubies power to relive it"
 
 screen peter:
     modal True
