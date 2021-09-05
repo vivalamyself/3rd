@@ -660,7 +660,46 @@ image bubble1:
     0.2
     "leader11"
     6.2
-   
+image bubble2:
+    "leader"
+    0.2
+    "leader1"
+    0.2
+    "leader2"
+    0.2
+    "leader3"
+    0.2
+    "leader12"
+    0.2
+    "leader13"
+    0.2
+    "leader14"
+    5.0
+image bubble21:
+    "leader14"
+    0.5
+    "leader13"
+    0.2
+    "leader12"
+    0.2
+    "leader13"
+    0.2
+image bubble22:
+    "leader"
+    0.2
+    "leader1"
+    0.2
+    "leader2"
+    0.2
+    "leader3"
+    0.2
+    "leader15"
+    0.2
+    "leader16"
+    0.2
+    "leader17"
+    0.2
+       
 image handruby:
     "handruby1"
     0.3
@@ -742,7 +781,342 @@ image horsed:
     0.3
     "horsed9"
     0.3
-
+image hgrave:
+    "hgrave0"
+    0.2  
+    "hgrave1"
+    0.2
+    "hgrave2"
+    0.2
+    "hgrave3"
+    0.2
+    "hgrave4"
+    0.2
+    "hgrave5"
+    0.2
+    "hgrave6"
+    0.2
+    "hgrave7"
+    0.2
+    "hgrave8"
+    0.2
+    "hgrave9"
+    0.2
+    "hgrave10"
+    0.2
+    "hgrave11"
+    0.2
+    "hgrave12"
+    0.2
+    "hgrav13"
+    0.2
+    "hgrave14"
+    0.2
+    "horsegrave1"
+    0.2
+image cwave:
+    "cwaveo"  
+    0.2  
+    "cwave0"  
+    0.2
+    "cwave1"  
+    0.2
+    "cwave2"  
+    0.2
+    "cwave3"  
+    0.2
+    "cwave4"  
+    0.2
+    "cwave5"  
+    0.2
+    "cwaveo"  
+    0.2
+image bwave:
+    "bwave0"  
+    0.2
+    "bwave1"  
+    0.2
+    "bwave2"  
+    0.2
+    "bwave3"  
+    0.2
+    "bwave4"  
+    0.2
+    "bwave5"  
+    0.2
+    "bwave6"  
+    0.2    
+    "bwave7"  
+    0.2
+    "bwave8"  
+    0.2
+    "bwave0"  
+    0.2
+    "bwave0"  
+    0.2
+image cerw:
+    "cerw0"
+    0.2    
+    "cerw1"
+    0.2   
+    "cerw2"
+    0.2   
+    "cerw3"
+    0.2   
+    "cerw4"
+    0.2   
+    "cerw5"
+    0.2   
+    "cerw6"
+    0.2   
+    "cerw7"
+    0.2   
+    "cerw8"
+    0.2   
+    "cerw9"
+    0.2   
+image hwake:
+    "hwake0"
+    0.2   
+    "hwake1"
+    0.2
+    "hwake2"
+    0.2
+    "hwake3"
+    0.2
+    "hwake4"
+    0.2
+    "hwake5"
+    0.2
+    "hwake6"
+    0.2
+    "hwake7"
+    0.2
+image sattack:
+    "sattack0"
+    0.2
+    "sattack1"
+    0.2
+    "sattack2"
+    0.2
+    "sattack3"
+    0.2
+    "sattack4"
+    0.2
+    "sattack5"
+    0.2
+    "sattack6"
+image skeletonf:
+    "skeleton0" 
+    0.2  
+    "skeleton11" 
+    0.2
+    "skeleton12" 
+    0.2
+    "skeleton13" 
+    0.2
+    "skeleton14" 
+    0.2
+    "skeleton15" 
+    0.2
+    "skeleton16" 
+    0.2
+    "skeleton17" 
+    0.2
+    "skeleton18" 
+    0.2
+    "skeleton19" 
+    0.2
+image dride:
+    "dride0" 
+    0.2
+    "dride1"
+    0.2
+    "dride2"
+    0.2
+    repeat
+image drider:
+    "dride0r" 
+    0.2
+    "dride1r"
+    0.2
+    "dride2r"
+    0.2
+    repeat    
+image wsattack:
+    "wsattack0"
+    0.2
+    "wsattack1"
+    0.2
+    "wsattack2"
+    0.2
+    "wsattack3"
+    0.2
+    "wsattack4"
+    0.2
+    "wsattack5"
+    0.2
+    "wsattack6"
+    1.0    
+image splan0:
+    "splan"
+    0.2
+    "splan1"
+    0.2
+    "splan2"
+    0.2
+    "splan3"
+    0.2
+    "splan4"
+    0.2
+    "splan5"
+    0.2
+    "splan6"
+    0.2
+image splan01:    
+    "splan6"
+    0.2
+    "splan7"
+    0.2
+    "splan8"
+    0.2
+    "splan9"
+    0.2
+    "splan10"
+    0.2
+    "splan11"
+    0.2
+image splan02:
+    "splan11"
+    0.2
+    "splan12"
+    0.2
+    "splan13"
+    0.2
+    "splan14"
+    0.2
+    "splan15"
+    0.2
+image dfs:
+    "dfs4"
+    0.8
+    "dfs3"
+    0.8
+    "dfs2"
+    0.7
+    "dfs1"
+    0.4
+    "dfs0"
+    0.4
+image wwsattack:
+    "wwsattack0"
+    0.2
+    "wwsattack1"
+    0.2
+    "wwsattack2"
+    0.2
+    "wwsattack3"
+    0.2
+    "wwsattack4"
+    0.2
+    "wwsattack5"
+    0.2
+    "wwsattack6"
+    1.0    
+image rwwsattack:
+    "wwsattack0"
+    0.2
+    "wwsattack1"
+    0.2
+    "wwsattack2"
+    0.2
+    "wwsattack3"
+    0.2
+    "wwsattack4"
+    0.1
+    "wwsattack5"
+    0.1
+    "wwsattack6"
+    1.0        
+image rwsattack:
+    "wsattack0"
+    0.2
+    "wsattack1"
+    0.2
+    "wsattack2"
+    0.2
+    "wsattack3"
+    0.1
+    "wsattack4"
+    0.1
+    "wsattack5"
+    0.2
+    "wsattack6"
+    1.0   
+    repeat     
+image damzoom: 
+    "ddam2"
+    0.3
+    "ddam3"
+    0.3
+    "ddam4"
+    0.3  
+image dbreak:
+    "dbreak1"
+    1.3
+    "dbreak2"
+    1.4
+    "dbreak3"
+    1.5
+    "dbreak4"
+    1.7
+image floot:
+    "floot1"
+    0.1
+    "floot2"
+    0.1
+    "floot3"
+    0.1
+    "floot4"
+    0.1
+    repeat
+image sfloo:
+    "sfloo1"
+    0.3    
+    "sfloo2"
+    0.3
+    "sfloo3"
+    0.3
+    "sfloo4"
+    0.3
+    "sfloo5"
+    0.3
+    "sfloo6"
+    0.3
+image crowh:
+    "crowh0"
+    0.2
+    "crowh1"
+    0.2
+    "crowh2"
+    0.2
+    "crowh3"
+    0.2
+    "crowh4"
+    0.2
+    "crowh5"
+    0.2  
+    "crowh6"
+    0.2  
+image meddu:
+    "meddu1"
+    1.4
+    "meddu2"
+    1.4
+    "meddu3"
+    1.4
+    "meddu4"
+    1.4
 
 transform left_to_right:
     xalign 0.0
@@ -754,13 +1128,14 @@ transform left_to_right:
 define dis1 = Dissolve(1.0)
 define dis2 = Dissolve(2.0)
 
-
+init python:
+    config.overlay_screens.append("peter")
 # The game starts here.
 
 label start:
 
- 
     
+
     show bg12
     call screen peter
     if _return == "kick":
@@ -931,7 +1306,7 @@ label nomask:
     nar "the swamp dragon heard the voice and turn around to kill any alive creatures on its territory"
     show bg16
     show nomask
-    play sound "fire126.OGG"
+    play sound "fire126.MP3"
     d "There is no way to run away from it "
     d "Dragon set all forest on fire"
     show dragon2
@@ -1162,9 +1537,24 @@ label level2:
     d "why are you helping me?you are an elf, if i sucsess in my job your time will be end to"
     laya "its time to rebuild the world by humans hand, the human race will take the world control"
     laya "untill they make the world to a hell for themselves and other creaturs"
+    d "is a good day in my destiny? will i get luck in my future?"
+    laya "your destiny is depends on your choises "
+    show bubble2
+    laya "good days will happen for you, you will have victory beside a princess"
+    laya "but there is a mystery with her you must findout"
+    d "are these true events or just an imagine? "
+    laya "all these evens depends on what youre thinking and doing.ypur live or death "
+    d "i cant imagine what will happen for me. i'm confuse "
+    show bubble22 
+    laya "a gate will open for you peoples from other time and place ask you for help "
+    laya "thats the time then devils rised again"
+    laya "now go and face your destiny"
+
 
     hide leader
-    show bg19
+    scene black with dis1
+
+    show bg19 with dis1
     with moveinbottom
     nar "this village was destroyed by the vampire attack. no one  lives here..."
     nar "................."
@@ -1196,6 +1586,41 @@ label level2:
 
         "no i dont trust":
             jump untrust    
+label untrust:
+    $ untrust = True
+    show bg19
+    show stranger
+    show mask11
+    d "no i do it myself"
+    pet "ok just beware of traps and gaurds they can kill you easily"
+    scene black
+    with dis2
+    show text "{size=+25}After a while hawk caste{/size}" at truecenter
+    with dissolve
+    pause 2
+    hide text
+    with dissolve
+    show hcastle
+    with dis2
+    d "here iam.it was not too bad"
+    scene black
+    with dis2
+    show castledoor
+    with dissolve
+    d "i must find a way to go inside castle"
+    show meddun1 with dis1
+    pause 1.5
+    show dbacklvl2 with moveinright
+    d "its a very creepy place"
+    show meddu
+    pause 5.0
+    play sound "trrap.MP3"
+    scene black with dis1
+    show trap with dissolve
+    pause 2.0
+    show udie with fade
+    "you fail"
+    return
 
 label together:
     $ together = True
@@ -1439,31 +1864,28 @@ label corridor3:
     show corridor2
     show burning
     with dissolve
-
-    may "NO.NO.NO.stop. noooooo"
     
-    "."
+    pause 4.5
+    
     hide burning
     show burnback
     with dissolve
 
     
-    "."
-    "."
+    pause 3.0
     hide burnback
     show burn
     with dissolve
-    "."
-    "."
+    pause 5.0
 
     scene black
     show corhor1
     with dissolve
-    d "you dead t last"
+    d "you dead at last"
     show deadvampire0
     with dissolve
     show shining
-    "."
+    pause
     show corhor1
     with dissolve
     d "what is that?"
@@ -1471,7 +1893,7 @@ label corridor3:
     show eyejewel1
     with dissolve
     d "It's an amulet"
-    "."
+    pause
     show eyejewel
     d "looks like an eye!"
     d "how wired it's alive"
@@ -1481,16 +1903,16 @@ label corridor3:
     menu:
     
     
-        "pick the eye ":
+        "pick the amulet ":
             jump pickeye
 
 label pickeye:
     $ pckeye = True
     scene black
-    "."
+    pause 2.0
     scene black
     play sound "dogwin.MP3"
-    "."
+    pause 2.0
     show thedoor
     with dissolve
     d "what's that noise? who's there?"
@@ -1524,20 +1946,20 @@ label pickeye:
     aug "youu . youuu "
     show drac
     aug "I kill you"
-    "."
+    pause 1.5
     show drac6
-    "."
+    pause 1.5
     show throw
-    "."
+    pause 3.0
     show empityroom
     show room1
-    "."
+    pause 3.7
     show e131
     aug "I am not the only one,want to kill you "
     aug "everyone,come out and kill this man"
     
     show room2
-    "."
+    pause 2.0
  
     scene black 
     with dissolve
@@ -1547,35 +1969,36 @@ label pickeye:
     d "no, I lost my weapon"
     show riim12
     with dissolve
-    "."
+    pause 3.0
     show e333
     with dissolve
     aug "you have no power without your weapons,now we kill you in this room"
     d "We? there is nobody here"
     show e333
-    
-    
-    
+    pause 2.0
     show riim12
     with hpunch
     show riim12
+    play sound "boom1.Mp3"
     with hpunch
     d "what is that?" 
     show riim12
+    play sound "boom1.Mp3"
     with hpunch
-    "."
+    pause 3.0
     scene e333
+    play sound "boom1.Mp3"
     with hpunch
     aug "Someone is on the roof"
     aug "Come out my ladies you are ready now, go on the rooftop and kill everyone"
 
     show trapdoorpng
     
-    "."
+    pause 3.0
     show trapdoor
     aug "my ladies, I bite them a few weeks ago they are the perfect vampire now"
     show bats
-    "."
+    pause 3.0
     scene e333
     aug "Before I kill you, tell me who are you and what makes you come here"
     show riim12
@@ -1588,24 +2011,29 @@ label pickeye:
     with dissolve
     aug "yes but this room just has a little hole in this wall, I am safe in here"
     show sakf
+    play sound "boom2.Mp3"
     with hpunch
+    pause 2.0
     show sakf
+    play sound "boom2.Mp3"
     with hpunch
-    "."
+    pause 2.0
+    play sound "boom2.Mp3"
     show sakf02
     with hpunch
-    "."
+    pause 2.0
     show sakff
+    play sound "boom3.Mp3"
     
     scar "master, now is your death time. finally, I come to get my revenge"
     show scarshad
     aug "scar, you are a trader"
     show scarshadd
-    "."
+    pause 2.0
     show sakfff
-    "."
+    pause 2.0
     show scarshaddd
-    "."
+    pause 2.0
 
 
 
@@ -1820,11 +2248,6 @@ label lvl3:
     with dis1
     d "finally in old battlefield, i lose many of my friends here"
     d "i have to find my dear friend my horse"
-    scene black
-    show crowland with dis1
-    d "sound like crows have party here, to many warriors corps are a good food for crows"
-    show crowlandzoom
-    with dissolve
     d "very hard days, enemies attack on my peoples"
     scene light1 with dis1
     show villageattack
@@ -1844,6 +2267,7 @@ label lvl3:
     "and peoples was happy"
     scene light1 with dissolve
     show dragfire with dis1
+    pause 2.0
     show burnhand with dis1
     "until the fire dragon comes and turn our happyness to the hell"
     scene light1 with dissolve
@@ -1856,31 +2280,31 @@ label lvl3:
     scene light1 with dissolve
     show horsed
     with dissolve
-    "."
+    pause 4.0
     show horserun
     with dis1
-    "."
+    pause 1.0
     show horserun0
     with dis1
     " "
     show horsejumpf
     with dissolve
-    "."
+    pause 1.0
     show horsejumpff
     with dissolve
-    "."
+    pause 1.0
     show horsejumpfff
     with vpunch
-    "."
+    pause 1.0
     show horsejumpffff
     with dissolve
-    "."
+    pause 1.0
     show horsejumpfffff
     with dissolve
-    "."
+    pause 1.0
     show horsejumpffffff
     with dissolve
-    "."
+    pause 1.0
     scene light1 with dissolve
     show clif with dis1
     " "
@@ -1889,6 +2313,314 @@ label lvl3:
     scene light1 with dissolve
     show crowlandzoom with dis1
     "i must find my horse bones and use rubies power to relive it"
+
+
+    scene black
+    show crowland with dis1
+    d "sound like crows have party here, to many warriors corps are a good food for crows"
+    show crowlandzoom
+    with dissolve
+    pause 3.0
+    show horsegrave
+    with dissolve
+    d "here the grave"
+    scene black
+    with dis2
+    play sound "rocksand.MP3"
+    show text "{size=+25}stone sound{/size}" at truecenter
+    with dissolve
+    pause 2
+    hide text
+    with dissolve
+    show horsegrave1 with dis1
+    "my dear friend i tpld you i will be back"
+    show hgrave
+    pause 2.0
+    scene light1 with dissolve
+    play sound "bcwave.MP3"
+    show cwave
+    pause 2.0
+    play sound "cbwave.MP3"
+    show bwave
+    pause 2.0
+    show cerw
+    pause 2.0
+    scene black with dis1
+    pause 2.0
+    show hwake
+    pause 2.0
+    show crowlandzoom
+    with dissolve
+    d "my dear horse you are alive agin "
+    "we can ride "
+    
+    show hwakee
+    with dissolve
+    d "you are in green fire what was this magic"
+    show skeletonwc
+    with dissolve
+    
+    d "A walking skeleton? but how?"
+    show hwaked
+    with dissolve
+    d "ow it was my fault .I bring this skeleton to live"
+    show hwakedz
+    with dissolve
+    d "I use stones for my horse.but i bring every death humans around here to live "
+    show dattack
+    with dissolve
+    d "now i cant let you stay alive"
+    scene black with dis1
+    play sound "slash1.MP3"
+    show sattack
+    with vpunch
+    pause 2
+    show skeletonf
+    " "
+    show croesf
+    " "
+    show dlup
+    with dissolve
+    d "whats the matter?"
+    d "there must be somthing horrible . crows are scared"
+    show skeletons
+    with dissolve
+    d "an army of walking skeletons "
+    show hwakedz
+    with dissolve
+    d "what i have done! i wake them all"
+    d "they cant die with my weapons imust break all of them with a big hit now what?"
+    menu:
+        m "choose one"
+    
+        "i whait here and fight with all of them ":
+            jump fightskeletons
+
+        "i must sank them into the sea":
+            jump dam
+label fightskeletons:
+    $ lvl3 = True
+    scene black with dis1
+    play sound "horseride.MP3" loop
+    show dride
+    pause
+    stop sound 
+    
+    show splan
+    pause
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wsattack
+    with vpunch
+    show splan0
+    pause
+    hide wsattack
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wsattack
+    with vpunch
+    show splan01
+    pause
+    hide wsattack
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wsattack
+    with vpunch
+    hide splan
+    show splan02
+    
+    pause
+    play sound "<from 1 to 3.5>horseride.MP3"
+    show dfs
+    pause
+    stop sound
+
+    scene black with dis1
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wsattack
+    with vpunch
+    pause
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wwsattack
+    with vpunch
+    pause
+    hide wsattack
+    hide wwsattack
+    play sound "<from 0.3 to 2.9>slash1.MP3" loop
+    
+    show rwsattack
+    show rwwsattack
+    
+    pause 5.9
+    stop sound
+
+    show dlooking
+    d "I cant stop them with this!. they are repair themselves!"
+    show skeletoncr
+    d "they dont feel pain, no bleeding, have no sense, no muscles and even have no brain to think"
+    d "it's impossible. how can they move like this? "
+    show dlooking
+    d "I must sink all into the sea"
+    show drideback
+    d "lets go to the dam place my dear horse"  
+    play sound "horseride.MP3" loop
+    show drider
+    d "I wll break the dam and water flow will take them to the sea"
+    pause
+    stop sound
+    show ddjumpr
+    with dissolve
+    d "If you want me so come after me "
+    scene black with dis1
+    play sound "horseride.MP3" loop
+    show drider
+    d "I must runaway fast after break the dam"
+    pause
+    stop sound
+    scene black with dis1
+    play sound "river3.mp3" loop
+    show ddam1
+    d "here is the dam this is all I need "
+    d "and you my friend better runaway from here"
+    show ddam2
+    with dissolve
+    d "I need to make a hole in this dam"
+    show damzoom
+    pause 
+    
+    scene black with dis1
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wwsattack
+    with vpunch
+    pause
+    play sound "river3.mp3" loop
+    show dambreak1
+    d "strong woods"
+    play sound "dbreak.mp3"
+    
+    show dbreak
+    with vpunch
+    d "but im stronger"
+    show dambreak21
+    d "better runaway"
+    scene black with dis1
+    play sound "flootwater.mp3" loop
+    show floot with dis1
+    d "good bye and rest in bottom of sea"
+    d "dear skeletons"
+    show sfloo
+    pause 3.0
+    play sound "river.mp3" loop
+    show bdam with dis1
+    show dhalf with moveinleft
+    d "what is this?"
+    show crowh0
+    d "its a crow"
+    d "hey buddy i dont let you die here"
+    show crowh
+    pause 2.0
+    scene black with dis1
+    show bdam with dissolve
+    show dhalfc
+    d "despair come here boy"
+    show desside with moveinright
+    d "you are a good horse"
+    scene black with dissolve
+    show ddrider with dis1
+    d "lets ride to the city "
+    scene black with dis1
+    play sound "horseride.MP3" loop
+    show drider
+    d "another advanture in waithing for us"
+    pause 5.0
+    scene black with dis1
+    stop sound
+    show fmap4 with dis1
+    
+    menu:
+        "start level4 ":
+            jump lvl4
+
+label dam:
+    $ dam = True
+    scene black
+    show drideback with dis1
+    d "lets go to the dam place my dear horse"  
+    play sound "horseride.MP3" loop
+    show drider
+    d "I wll break the dam and water flow will take them to the sea"
+    pause
+    stop sound
+    show ddjumpr
+    with dissolve
+    d "If you want me so come after me "
+    scene black with dis1
+    play sound "horseride.MP3" loop
+    show drider
+    d "I must runaway fast after break the dam"
+    pause
+    stop sound
+    scene black with dis1
+    play sound "river3.mp3" loop
+    show ddam1
+    d "here is the dam this is all I need "
+    d "and you my friend better runaway from here"
+    show ddam2
+    with dissolve
+    d "I need to make a hole in this dam"
+    show damzoom
+    pause 1.5
+    
+    scene black with dis1
+    play sound "<from 0.5 to 3.5>slash1.MP3"
+    show wwsattack
+    with vpunch
+    pause 1.2
+    play sound "river3.mp3" loop
+    show dambreak1
+    d "strong woods"
+    play sound "dbreak.mp3"
+    
+    show dbreak
+    with vpunch
+    d "but im stronger"
+    show dambreak21
+    d "better runaway"
+    scene black with dis1
+    play sound "flootwater.mp3" loop
+    show floot with dis1
+    d "good bye and rest in bottom of sea"
+    d "dear skeletons"
+    show sfloo
+    pause 3.0
+    play sound "river.mp3" loop
+    show bdam with dis1
+    show dhalf with moveinleft
+    d "what is this?"
+    show crowh0
+    d "its a crow"
+    d "hey buddy i dont let you die"
+    show crowh
+    pause 2.0
+    scene black with dis1
+    show bdam with dissolve
+    show dhalfc
+    d "despair come here boy"
+    show desside with moveinright
+    d "you are a good horse"
+    scene black with dissolve
+    show ddrider with dis1
+    d "lets ride to the city "
+    scene black with dis1
+    play sound "horseride.MP3" loop
+    show drider
+    d "another advanture in waithing for us"
+    pause 5.0
+    scene black with dis1
+    stop sound
+    show fmap4 with dis1
+    " "
+    menu:
+        "start level4 ":
+            jump lvl4
+
 
 screen peter:
     modal True
